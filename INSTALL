@@ -1,0 +1,9 @@
+Building Grandcoin
+
+See doc/readme-qt.rst for instructions on building Grandcoin-QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Grandcoin.
+
+See doc/build-*.txt for instructions on building grandcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Grandcoin.
