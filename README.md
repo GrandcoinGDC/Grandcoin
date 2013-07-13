@@ -4,7 +4,7 @@ Grandcoin - a decendent of Litecoin that combines the great features from Luckyc
 	- 45 seconds block time
 	- Difficulty retargets every 30 blocks 
 	- Expected total coins will be 1,427,621,642.
-	- 4 confirmations for transaction
+	- 6 confirmations for transaction
 	- 50 confirmations for minted blocks
 	- Low transaction fees.
 	- Every day (on average) there is a random superblock with 5000-10000 coins.
