@@ -1,6 +1,5 @@
-Grandcoin - a decendent of Litecoin that combines the great features from Luckycoin (random blocks) and Florincoin (transaction message). Like Litecoin it uses scrypt as a proof of work scheme. The grandcoin name comes from the fact that each block has 1 grand coins (1000 coins).
+Grandcoin - a decendent of Litecoin that combines the great features from Luckycoin (random blocks) and Florincoin (transaction message). Like Litecoin it uses scrypt as a proof of work scheme. 
 
-	- Each normal block has 1 grand coins (1000)
 	- 45 seconds block time
 	- Difficulty retargets every 30 blocks 
 	- Expected total coins will be 1,427,621,642.
@@ -14,7 +13,7 @@ Grandcoin - a decendent of Litecoin that combines the great features from Luckyc
 
 	- The default ports are 12377(Connect) and 12378(RPC).
 
-The official website is: www.grandcoin.org
+The official website is: www.grandcoin.info
 
 
 Development process
