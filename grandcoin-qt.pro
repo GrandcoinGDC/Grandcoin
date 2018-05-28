@@ -55,7 +55,7 @@ contains(USE_UPNP, -) {
     count(USE_UPNP, 0) {
         USE_UPNP=1
     }
-    DEFINES += USE_UPNP=$$USE_UPNP STATICLIB
+    DEFINES += USE_UPNP=$$USE_UPNP MINIUPNP_STATICLIB STATICLIB
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
     win32:LIBS += -liphlpapi
@@ -81,8 +81,8 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
 
 !windows {
     # for extra security against potential buffer overflows
-    QMAKE_CXXFLAGS += -fstack-protector
-    QMAKE_LFLAGS += -fstack-protector
+    QMAKE_CXXFLAGS += -fstack-protector-all
+    QMAKE_LFLAGS += -fstack-protector-all
     # do not enable this on windows, as it will result in a non-working executable!
 }
 
