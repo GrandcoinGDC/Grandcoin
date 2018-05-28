@@ -70,7 +70,6 @@
         <file alias="fr_CA">locale/bitcoin_fr_CA.qm</file>
         <file alias="he">locale/bitcoin_he.qm</file>
         <file alias="hr">locale/bitcoin_hr.qm</file>
-        <file alias="hu">locale/bitcoin_hu.qm</file>
         <file alias="it">locale/bitcoin_it.qm</file>
         <file alias="lt">locale/bitcoin_lt.qm</file>
         <file alias="nb">locale/bitcoin_nb.qm</file>
