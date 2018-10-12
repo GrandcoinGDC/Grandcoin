@@ -62,16 +62,58 @@ Versions used in this release:
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
-sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
-sudo apt-get install libqrencode3 libqrencode-dev
 
-sudo add-apt-repository ppa:bitcoin/bitcoin
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev
+apt-get install p7zip-full autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libtool libltdl-dev libxml-parser-perl make patch perl pkg-config python ruby scons sed unzip wget xz-utils
 
-sudo apt-get install libboost-all-dev 
+apt-get install libssl-dev
+apt-get install g++-multilib libc6-dev-i386
+apt-get install libgtk-3-dev
 
-If using Boost 1.37, append -mt to the boost libraries in the makefile.
+add-apt-repository ppa:bitcoin/bitcoin
+apt-get update
+apt-get install libdb4.8-dev libdb4.8++-dev
+
+Boost :
+---------
+apt-get install libboost-all-dev
+
+Berkeley DB :
+---------
+wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+tar zxvf db-4.8.30.NC.tar.gz
+cd db-4.8.30.NC/build_unix
+../dist/configure --enable-cxx --disable-shared 
+make
+cd~
+
+miniupnpc
+---------
+wget http://miniupnp.free.fr/files/miniupnpc-1.9.20150206.tar.gz
+tar xvf miniupnpc-1.9.20150206.tar.gz
+mv ./miniupnpc-1.9.20150206 ./miniupnpc
+cd miniupnpc
+make
+make install
+cd~
+
+Qt 4.8 :
+---------
+apt-get install qt4-qmake libqt4-dev
+
+wget https://download.qt.io/archive/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz
+tar xvfz qt-everywhere-opensource-src-4.8.6.tar.gz
+mv ./qt-everywhere-opensource-src-4.8.6 ./Qt-4.8.6
+cd Qt-4.8.6
+./configure -release -opensource -confirm-license -static -no-sql-sqlite -no-qt3support -no-opengl -qt-zlib -no-gif -qt-libpng -qt-libmng -no-libtiff -qt-libjpeg -no-openssl -no-phonon -no-phonon-backend -no-multimedia -no-audio-backend -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -nomake demos -nomake examples
+make
+make install
+cd~
+apt-get install qt4-dev-tools
+
+QR Encode (optional) :
+---------
+apt-get install libqrencode-dev
+
 
 
 Dependency Build Instructions: Gentoo
