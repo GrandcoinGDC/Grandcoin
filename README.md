@@ -13,7 +13,7 @@ Grandcoin - a decendent of Litecoin that combines the great features from Luckyc
 
 	- The default ports are 12377(Connect) and 12378(RPC).
 
-The official website is: https://grandcoin.info
+The official website is: https://www.crypto-city.com/index.php/grandcoin-gdc
 
 
 Development process
